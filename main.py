@@ -77,10 +77,10 @@ if __name__ == '__main__':
         phi[idx + offset] = vectorize(PATH + filename)
         labels.append(0)
     #load sad data
-    PATH = "../data/sad/"
+    '''PATH = "../data/sad/"
     for idx, filename in enumerate(smilefiles):
         phi[idx] = vectorize(PATH + filename)
-        labels.append(2)
+        labels.append(2)'''
 
     """
     training the data with logistic regression
@@ -105,7 +105,7 @@ if __name__ == '__main__':
                     print "you are smilinggggggggg! :-) "
     elif result == 0:
                     print "you are neutral "
-    elif result==2:
+    #elif result==2:
 		    print "you are sad"
     #else:
      #           print "failed to detect mouth. Try hold your head straight and make sure there is only one face."
